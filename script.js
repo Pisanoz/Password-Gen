@@ -121,7 +121,7 @@ function questions() {
 	} while (!isValid);
 	return responses;
 }
-// This function joins all the user responses and then creates the result - a strong password.
+// joins user choices and gens password
 function generatePassword() {
 	var passwordOptions = questions();
 	var possibleCombo = [];
@@ -149,10 +149,4 @@ function generatePassword() {
 	console.log(finalPassword);
 
 	return finalPassword;
-}
-
-// Write password
-function writePassword() {
-	var password = generatePassword();
-	var passwordText = document.querySelector("#password");
 }
