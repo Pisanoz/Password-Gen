@@ -140,13 +140,10 @@ function generatePassword() {
 		for (var i of special) possibleCombo.push(i);
 	}
 
-	console.log(possibleCombo);
-
 	for (var i = 0; i < passwordOptions.length; i++) {
 		finalPassword +=
 			possibleCombo[Math.floor(Math.random() * possibleCombo.length)];
 	}
-	console.log(finalPassword);
 
 	return finalPassword;
 }
